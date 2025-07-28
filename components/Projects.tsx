@@ -63,7 +63,7 @@ export default function Projects() {
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-slate-900 p-3 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto relative">
         {/* Back to Home Button - Mobile Optimized */}
-        <motion.div 
+        <motion.div
           className="fixed top-4 left-4 z-50 sm:absolute sm:top-0 sm:left-0"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -81,7 +81,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Header Section - Mobile Optimized */}
-        <motion.div 
+        <motion.div
           className="text-center mb-8 sm:mb-16 mt-20 sm:mt-20 px-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Projects Grid - Mobile Single Column */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-8 mb-8 sm:mb-12"
           variants={containerVariants}
           initial="hidden"
@@ -106,9 +106,9 @@ export default function Projects() {
             <motion.div
               key={idx}
               variants={cardVariants}
-              className="bg-gray-900/60 backdrop-blur-sm border border-gray-700/40 rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-8 shadow-2xl flex flex-col h-full transition-all duration-300 hover:border-gray-600/60 hover:bg-gray-900/80"
-              whileHover={{ scale: 1.02 }}
+              className="bg-gray-900/60 backdrop-blur-sm border border-gray-700/40 rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-8 shadow-2xl flex flex-col h-full transition-all duration-300 hover:border-gray-600/60 hover:bg-gray-900/80 hover:scale-[1.02] lg:hover:scale-105"
             >
+
               {/* Category Badge */}
               <div className="mb-3 sm:mb-4">
                 <span className="inline-block px-2 py-1 sm:px-3 sm:py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30 rounded-full text-xs font-medium text-blue-300 font-mono">
@@ -120,7 +120,7 @@ export default function Projects() {
               <h3 className="text-lg sm:text-2xl font-bold text-white mb-3 sm:mb-4 leading-tight font-mono">
                 {proj.title}
               </h3>
-              
+
               {/* Tech Stack - Mobile Optimized */}
               <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                 {proj.tech.map((t) => (
@@ -138,7 +138,7 @@ export default function Projects() {
               <p className="text-gray-300 text-xs sm:text-base mb-4 sm:mb-6 leading-relaxed flex-grow font-mono">
                 {proj.details[0]}
               </p>
-              
+
               {/* Tags - Mobile Optimized */}
               <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                 {proj.tags.map((tag) => (
@@ -150,7 +150,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              
+
               {/* Project Link - Mobile Optimized */}
               <div className="mt-auto">
                 <a
@@ -177,7 +177,7 @@ export default function Projects() {
 
 export function MoreProjects() {
   return (
-    <motion.div 
+    <motion.div
       className="flex justify-center px-2"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -194,12 +194,12 @@ export function MoreProjects() {
           <i className="fab fa-github text-xl sm:text-2xl group-hover:text-blue-400 transition-colors duration-300"></i>
           <div className="absolute inset-0 bg-blue-400/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
         </div>
-        
+
         <span className="text-sm sm:text-lg group-hover:text-blue-300 transition-colors duration-300">
           <span className="hidden sm:inline">Explore More Projects on GitHub</span>
           <span className="sm:hidden">More on GitHub</span>
         </span>
-        
+
         <i className="fas fa-arrow-right text-xs sm:text-sm group-hover:translate-x-1 transition-transform duration-300 group-hover:text-blue-400"></i>
       </a>
     </motion.div>
