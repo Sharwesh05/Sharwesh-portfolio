@@ -580,6 +580,7 @@ const HeroSection = () => {
     )
 }
 
+
 // Helper function to get appropriate icons for technologies
 const getIconClass = (tech: string): string => {
     const iconMap: Record<string, string> = {
