@@ -581,8 +581,8 @@ const HeroSection = () => {
 }
 
 // Helper function to get appropriate icons for technologies
-const getIconClass = (tech: string) => {
-    const iconMap = {
+const getIconClass = (tech: string): string => {
+    const iconMap: Record<string, string> = {
         'React.js': 'fab fa-react animate-spin-slow',
         'Next.js': 'fas fa-layer-group',
         'TypeScript': 'fas fa-code',
