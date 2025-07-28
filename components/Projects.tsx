@@ -107,7 +107,7 @@ export default function Projects() {
               key={idx}
               variants={cardVariants}
               className="bg-gray-900/60 backdrop-blur-sm border border-gray-700/40 rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-8 shadow-2xl flex flex-col h-full transition-all duration-300 hover:border-gray-600/60 hover:bg-gray-900/80"
-              whileHover={{ scale: window.innerWidth >= 1024 ? 1.02 : 1 }} // Disable scale on mobile
+              whileHover={{ scale: 1.02 }}
             >
               {/* Category Badge */}
               <div className="mb-3 sm:mb-4">
